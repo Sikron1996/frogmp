@@ -11,8 +11,8 @@ dotenv.config();
 const app = express();
 
 // Use Base Sepolia (testnet) for development
-const network = "base-sepolia";
-const facilitatorObj = { url: "https://x402.org/facilitator" };
+const network = "base";
+const facilitatorObj = { url: "https://facilitator.payai.network" };
 
 // Serve static files from the public directory
 app.use(express.static(path.join(process.cwd(), "public")));
@@ -26,7 +26,7 @@ app.use(
     {
       // Protected endpoint for authentication
       "GET /authenticate": {
-        price: "$0.10", // Set your desired price
+        price: "$1", // Set your desired price
         network: network,
       },
     },
