@@ -12,7 +12,7 @@ const app = express();
 
 // Use Base Sepolia (testnet) for development
 const network = "base";
-const facilitatorObj = { url: "https://facilitator.payai.network" };
+const facilitatorObj = { url: "https://x402-facilitator.aurracloud.com/api/v1/3b3cc8eb-5c36-419b-aeda-052a227debac" };
 
 // Serve static files from the public directory
 app.use(express.static(path.join(process.cwd(), "public")));
